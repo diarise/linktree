@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ActiveEraHub | Health & Fitness Tools</title>
+    <title>ActiveEraHub | Health & Fitness Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -11,108 +12,147 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', sans-serif;
         }
+        
         body {
-            background: linear-gradient(45deg, #2CB9B3, #1A5276);
+            background: linear-gradient(135deg, #2CB9B3, #1A5276);
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
         }
+
         .container {
             max-width: 500px;
-            text-align: center;
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
-            padding: 30px;
             border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
+
         .profile-img {
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            border: 3px solid white;
+            border: 4px solid white;
             object-fit: cover;
             margin-bottom: 15px;
         }
-        .bio h1, .bio p {
+
+        .bio {
             color: white;
+            margin-bottom: 20px;
         }
+
+        .bio h1 {
+            font-size: 1.8em;
+        }
+
+        .category {
+            color: white;
+            font-size: 1.2em;
+            margin: 20px 0 10px;
+            text-transform: uppercase;
+        }
+
         .links {
-            margin-top: 20px;
             display: flex;
             flex-direction: column;
             gap: 12px;
         }
+
         .link-button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 12px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 14px;
             border-radius: 12px;
             text-decoration: none;
             color: white;
             font-weight: bold;
-            transition: 0.3s;
-            background: rgba(255, 255, 255, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            transition: all 0.3s ease;
         }
+
         .link-button:hover {
             transform: scale(1.05);
             background: rgba(255, 255, 255, 0.3);
         }
-        .social {
-            background: linear-gradient(45deg, #4A90E2, #9013FE);
-        }
+
         .footer {
             margin-top: 20px;
             color: white;
-            font-size: 0.8em;
+            opacity: 0.8;
+            font-size: 0.85em;
+        }
+        /* Featured Product - Stand Out Effect */
+        .featured {
+            background: linear-gradient(45deg, #FF5733, #FFC300);
+            font-size: 1.1em;
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <img src="images/photo_profile.png" alt="Profile" class="profile-img">
+        
         <div class="bio">
             <h1>@ActiveEraHub</h1>
-            <p>Honest Reviews • Fat-Burning Tools • Your Health Upgrade</p>
+            <p>Your Gateway to Health & Fitness Essentials</p>
         </div>
+
+        <h3 class="category">🔥 Featured</h3>
         <div class="links">
-            <a href="https://morningcoffeeritual.net/rem?hop=luna687" class="link-button" style="background: linear-gradient(45deg, #FF6B6B, #FFD93D);">
-                <i class="fas fa-fire"></i>
-                Java Burn - 60% OFF (Claim Now)
+            <a href="JAVA_BURN_AFFILIATE_LINK" class="link-button featured">
+                <i class="fas fa-fire"></i> Java Burn - 60% OFF
             </a>
-            <a href="YOUR_NEW_PRODUCT_LINK" class="link-button">
-                <i class="fas fa-dumbbell"></i>
-                New Health & Fitness Product (Coming Soon)
+        </div>
+
+        <h3 class="category">💪 Fitness</h3>
+        <div class="links">
+            <a href="PROTEIN_POWDER_LINK" class="link-button">
+                <i class="fas fa-dumbbell"></i> Premium Protein Powder
             </a>
-            <a href="https://www.instagram.com/activeerahub/" class="link-button social">
-                <i class="fab fa-instagram"></i>
-                Instagram Tips & Updates
+            <a href="WORKOUT_GUIDE_LINK" class="link-button">
+                <i class="fas fa-running"></i> 30-Day Home Workout Plan
             </a>
-            <a href="https://www.threads.net/@activeerahub" class="link-button social">
-                <i class="fas fa-comments"></i>
-                Join the Threads Community
+        </div>
+
+        <h3 class="category">🥗 Nutrition</h3>
+        <div class="links">
+            <a href="#" class="link-button">
+                <i class="fas fa-utensils"></i> Custom Meal Planner
             </a>
-            <a href="https://bsky.app/profile/activeerahub.bsky.social" class="link-button social">
-                <i class="fas fa-cloud"></i>
-                Follow on Bluesky
+            <a href="#" class="link-button">
+                <i class="fas fa-leaf"></i> Super Greens Powder
+            </a>
+        </div>
+
+        <h3 class="category">📱 Connect</h3>
+        <div class="links">
+            <a href="https://www.instagram.com/activeerahub/" class="link-button">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.threads.net/@activeerahub" class="link-button">
+                <i class="fas fa-comments"></i> Threads
+            </a>
+            <a href="https://bsky.app/profile/activeerahub.bsky.social" class="link-button">
+                <i class="fas fa-cloud"></i> Bluesky
             </a>
             <a href="YOUR_FREE_GUIDE_LINK" class="link-button">
-                <i class="fas fa-file-pdf"></i>
-                Free 5-Day Metabolism Guide
+                <i class="fas fa-file-pdf"></i> Free Metabolism Guide
             </a>
-            <!-- Contact -->
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=diarise@gmail.com&su=Collaboration%20Inquiry" class="link-button" target="_blank">
+            <a href="mailto:diarise@gmail.com?subject=Collaboration%20Inquiry" class="link-button">
                 <i class="fas fa-envelope"></i>
                 Contact for Collabs
             </a>
         </div>
+
         <div class="footer">
-            <p>Earnings Disclosure: I may earn commissions from links.</p>
+            <p>Earnings Disclosure: Commissions earned from links.</p>
         </div>
     </div>
 </body>
